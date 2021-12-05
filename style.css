@@ -8,6 +8,11 @@ body.dark-theme {
   --color-text: wheat;
 }
 
+body.red-theme {
+  --color-bg: red;
+  --color-text: wheat;
+}
+
 body {
   background-color: var(--color-bg);
 }
@@ -17,15 +22,13 @@ h1 {
 }
 
 @media (prefers-color-scheme: dark) {
+  body {
+    --color-bg: rgb(53, 53, 53);
+    --color-text: wheat;
+  }
 
-    body {
-        --color-bg: rgb(53,53,53);
-        --color-text: wheat;
-    }
-
-    body.light-theme {
-        --color-bg: #DDDDDD;
-        --color-text: #EE6352;
-    }
-    
+  body.light-theme {
+    --color-bg: #dddddd;
+    --color-text: #ee6352;
+  }
 }
