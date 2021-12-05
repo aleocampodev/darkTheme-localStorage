@@ -1,0 +1,31 @@
+body {
+  --color-bg: #dddddd;
+  --color-text: #ee6352;
+}
+
+body.dark-theme {
+  --color-bg: rgb(53, 53, 53);
+  --color-text: wheat;
+}
+
+body {
+  background-color: var(--color-bg);
+}
+
+h1 {
+  color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        --color-bg: rgb(53,53,53);
+        --color-text: wheat;
+    }
+
+    body.light-theme {
+        --color-bg: #DDDDDD;
+        --color-text: #EE6352;
+    }
+    
+}
